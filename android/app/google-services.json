@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "613734420430",
+    "project_id": "mobile-app-proj-4ad2e",
+    "storage_bucket": "mobile-app-proj-4ad2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613734420430:android:e74092de33e0804a60659f",
+        "android_client_info": {
+          "package_name": "com.example.school_networking_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "613734420430-igurdnh5u1hk77u5ucb3gnvinm5lnq45.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1CwisVU_1Q6ucazAxq3N4KbqtraEIOLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "613734420430-b3bi9ltgs59r9t4m9bvs5h5cdd7pp6rc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "613734420430-l4k0np3ethqkg3nnhr0jcu100rt6muvv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.schoolNetworkingProject"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
