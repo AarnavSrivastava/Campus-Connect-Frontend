@@ -1,9 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:school_networking_project/firebase/data_service.dart';
 
 class AuthService {
   final userStream = FirebaseAuth.instance.authStateChanges();
-  static final user = FirebaseAuth.instance.currentUser;
+  static var user = FirebaseAuth.instance.currentUser;
 
   Future<UserCredential> googleLogin() async {
     // Trigger the authentication flow
@@ -24,6 +25,9 @@ class AuthService {
   }
 
   Future<void> signOut() async {
+    DataService.user = null;
+    user = null;
+
     await FirebaseAuth.instance.signOut();
   }
 }

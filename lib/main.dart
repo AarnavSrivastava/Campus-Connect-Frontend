@@ -1,9 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:school_networking_project/firebase/firebase_options.dart';
 import 'package:school_networking_project/routes.dart';
 
-void main() async {
+import 'firebase_options.dart';
+
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -18,12 +19,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'School Final',
-      theme: ThemeData(
-        primarySwatch: Colors.red,
-      ),
-      home: const GraphQLApp(),
+      home: GraphQLApp(),
     );
   }
 }
@@ -50,6 +48,11 @@ class _GraphQLAppState extends State<GraphQLApp> {
         } else if (snapshot.connectionState == ConnectionState.done) {
           return MaterialApp(
             routes: appRoutes,
+            theme: ThemeData.from(
+              colorScheme: ColorScheme.fromSeed(
+                seedColor: const Color.fromARGB(255, 149, 14, 29),
+              ),
+            ),
           );
         }
 

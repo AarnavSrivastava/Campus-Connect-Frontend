@@ -1,7 +1,7 @@
-import 'package:school_networking_project/pages/homescreen.dart';
-import 'package:school_networking_project/pages/loginscreen.dart';
+import 'package:school_networking_project/pages/main_screen.dart';
+import 'package:school_networking_project/pages/login_screen.dart';
 
 var appRoutes = {
-  '/': (context) => const HomePage(),
+  '/': (context) => const AuthGate(),
   '/login': (context) => const LoginScreen(),
 };
