@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:school_networking_project/types/post_info.dart';
 
+//Modified from flutter bricks - helps with making an aesthetically pleasing UI
 class PostWidget extends StatefulWidget {
   const PostWidget({
     super.key,

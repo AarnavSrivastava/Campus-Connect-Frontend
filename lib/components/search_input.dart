@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//Modified from flutter bricks - helps with making an aesthetically pleasing UI
 class SearchInput extends StatelessWidget {
   final TextEditingController textController;
   final String hintText;

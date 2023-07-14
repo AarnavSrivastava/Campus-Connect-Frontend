@@ -1,5 +1,4 @@
 import 'package:school_networking_project/types/class_info.dart';
-import 'package:school_networking_project/types/user_skeleton.dart';
 
 class SchoolInfo {
   String? id;

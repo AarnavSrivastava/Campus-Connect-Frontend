@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+//Modified from flutter bricks - helps with making an aesthetically pleasing UI
 class NameField extends StatelessWidget {
   const NameField({
     Key? key,
