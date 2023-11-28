@@ -5,4 +5,4 @@ CampusConnect is a small project I made that aims to connect students through su
 ### Front-end:
 Flutter
 ### Back-end:
-Apollo + GraphQL
+Apollo + GraphQL + Neo4j
